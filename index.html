@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Todos</title>
+</head>
+
+<body>
+  <h1>Garden Todos</h1>
+  <input type="text" placeholder="New Todo" />
+  <ul>
+    <li>Start Seedlings</li>
+    <li class="done">Deadhead Zinnias</li>
+    <li class="done">Water Tomatoes</li>
+    <li class="done">Harvest Potatoes</li>
+    <li>Prune Roses</li>
+  </ul>
+  <label>Delete All</label>
+  <input type="checkbox" id="scales" name="scales" checked />
+
+  <script>
+    let nodeList = document.querySelectorAll(".done");
+    for (let i = 0; i < nodeList.length; i++) {
+      nodeList[i].style.backgroundColor = "red";
+      console.log(nodeList[i]);
+    }
+  </script>
+  <script src="index.js"></script>
+  <h1>event</h1>
+  <button onclick="alert('you clicked me');">click me</button>
+</body>
